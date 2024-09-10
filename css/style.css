@@ -1,0 +1,284 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #EEF7FF;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #005f73;
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: #005f73;
+    font-weight: bold; /* Make the link stand out */
+}
+
+.nav2 a:hover {
+    color: #ff6700;
+}
+
+/* Splash Section */
+.splash {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.splash h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: #005f73;
+    margin-bottom: 20px;
+}
+
+.splash .content {
+    width: 100%;
+    text-align: center;
+}
+
+.splash .image img {
+    width: 250px;
+    height: 250px;
+}
+
+.splash .image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.splash .contact-info {
+    font-family: "Inter", sans-serif;
+    color: #333;
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.splash .tagline {
+    font-family: "Inter", sans-serif;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 7px;
+    background-color: #005f73;
+    margin: 5px 0;
+}
+
+/* Contact Page Section */
+.contact-page {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 80px auto 20px auto;
+}
+
+.contact-page h1 {
+    color: #005f73;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-page p.contact-info {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #005f73;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    background-color: #005f73;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004f5c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #005f73;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Card Styling for Projects and Experience */
+.card, .experience-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img, .experience-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.card h3, .experience-card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: #005f73;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card ul, .experience-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    font-size: 1rem;
+}
+
+.experience-card p {
+    font-family: "Inter", sans-serif;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.experience-card .date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.experience-card a {
+    text-decoration: none;
+    color: #005f73;
+}
+
+.experience-card a:hover {
+    color: #0a9396;
+}
+
+/* Grid Layouts */
+.three-col, .experience-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.experience-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Style the h2 headings */
+.head, section h2 {
+    font-size: 2rem;
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Style the education section paragraphs */
+.edu p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Set default styles for unordered lists */
+ul {
+    list-style-type: square;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    padding-left: 0;
+}
+
+/* Style description lists using grid layout */
+dl.honors-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    color: #333;
+    font-size: 1.1rem;
+}
+
